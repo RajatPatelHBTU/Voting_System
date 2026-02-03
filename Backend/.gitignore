@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directories
+bower_components/
+
+# Build directories
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+#service json
+src/skilled-circle-448817-d1-e3457c9445ad.json

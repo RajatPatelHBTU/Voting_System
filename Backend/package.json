@@ -1,0 +1,46 @@
+{
+  "name": "backend",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc && node dist\\index.js",
+    "build": "tsc --build && copyfiles -u 1 src/voterVerification.py dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "pip install -r requirements.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/storage": "^7.15.0",
+    "@google-cloud/vision": "^4.3.2",
+    "@ljharb/tsconfig": "^0.2.3",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/js-cookie": "^3.0.6",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/multer": "^1.4.12",
+    "@types/websocket": "^1.0.10",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "express": "^4.21.2",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "python-shell": "^5.0.0",
+    "websocket": "^1.0.35",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}

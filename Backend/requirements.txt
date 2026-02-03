@@ -1,0 +1,7 @@
+flask
+face-recognition
+numpy
+pillow
+opencv-python
+requests
+io
